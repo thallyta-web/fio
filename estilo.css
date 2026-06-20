@@ -1,0 +1,171 @@
+* {
+    margin: 0; padding: 0;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 10vh 20vh 70vh 50vh 40vh 1vh;
+    grid-template-areas: "nav nav"
+                        "header header"
+                        "main aside"
+                        "presentes aside"
+                        "sinta aside"
+                        "footer footer"
+}
+
+nav {
+    height: 90px;
+    background-color: #7B1D50;
+    position: sticky;
+    top: 0;
+    grid-area: nav;
+
+}
+
+nav p{}
+
+#ul-nav{
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#lista-nav{
+    list-style-type: none;
+    margin: 20px;
+}
+
+a{
+    font: 1.2rem "Itim", cursive;
+    text-decoration: none;
+}
+
+.a-nav{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.a-nav:link,.a-nav:visited{
+    color:#FDBCD0;
+}
+
+.a-nav:hover,.a-nav:active{
+    color: #5A331E;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    grid-area: header;
+}
+
+/*#box-main{
+        width: 100%;
+    background-color: floralwhite;
+    padding: 20px;
+    box-sizing: border-box;
+}*/
+
+h1 {
+    font: 3rem "Itim", cursive;
+    color: #5A331E;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main {
+    height: 70vh;
+    background-color: #FFF;
+
+    grid-area: main;
+    margin-top: 260px;
+    
+}
+
+aside {
+    height: 100%;
+    background-color: #FDBCD0;
+    grid-area: aside;
+    margin-top: 260px;
+}
+
+#box-aside{
+    height: 60px;
+    background-color: #C24585;
+    text-align: center;
+}
+
+h2{
+    font: 2rem "Itim", cursive;
+    color: #FDBCD0;
+    margin-bottom: 20px;
+}
+
+#pag-presentes{
+    height: 450px;
+    background-color: #C24585;
+    grid-area: presentes;
+    margin-top: 260px;
+}
+
+#pag-presentes p{
+    color: #FDBCD0;
+}
+
+
+#pag-sinta{
+    height: 450px;
+    background-color: #FFF;
+    grid-area: sinta;
+    margin-top: 260px;
+}
+#pag-sinta h2{
+    color: #5A331E;
+}
+
+p {
+    font: 1.2rem "Istok Web", sans-serif;
+    font-weight: 700;
+    color: #FDBCD0;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 30px;
+}
+
+footer {
+    height: 50px;
+    background-color: #7B1D50;
+    grid-area: footer;
+    margin-top: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    text-align: center;
+    color: #FDBCD0;
+}
+
+footer a{
+    text-align: center;
+    color: #FDBCD0;
+}
+
+footer a:hover{
+    text-align: center;
+    color: #777;
+}
