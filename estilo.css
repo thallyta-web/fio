@@ -10,8 +10,8 @@ body {
 
 section {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 10vh 20vh 70vh 50vh 40vh 1vh;
+    grid-template-columns: auto auto;
+    grid-template-rows: 10vh 20vh auto 50vh 40vh 1vh;
     grid-template-areas: "nav nav"
                         "header header"
                         "main aside"
@@ -26,10 +26,11 @@ nav {
     position: sticky;
     top: 0;
     grid-area: nav;
+    
 
 }
 
-nav p{}
+/*nav p{}*/
 
 #ul-nav{
     display: flex;
@@ -72,24 +73,34 @@ header {
     grid-area: header;
 }
 
-/*#box-main{
+#box-main{
         width: 100%;
-    background-color: floralwhite;
+    /*background-color: floralwhite;*/
     padding: 20px;
     box-sizing: border-box;
-}*/
+    display: flex;
+    flex-direction: column;
+}
+
+#box-main p{
+    font: 1.5rem "Istok Web", sans-serif;
+    line-height: 35px;
+    margin: 0px 40px 30px 40px;
+    color: #777;
+    text-wrap: pretty;
+}
 
 h1 {
     font: 3rem "Itim", cursive;
     color: #5A331E;
     text-align: center;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
 main {
     height: 70vh;
     background-color: #FFF;
-
     grid-area: main;
     margin-top: 260px;
     
@@ -100,12 +111,18 @@ aside {
     background-color: #FDBCD0;
     grid-area: aside;
     margin-top: 260px;
+    
 }
 
 #box-aside{
-    height: 60px;
+    height: 100px;
     background-color: #C24585;
     text-align: center;
+}
+
+#box-aside h2{
+    align-items: center;
+    padding: 20px 50px;
 }
 
 h2{
