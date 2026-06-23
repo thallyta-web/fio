@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+     <head>
+     	<meta charset="utf-8" />
+     	<meta name="author" content="Thallyta Sanches" />
+          <meta name="keywords" content="artesanato, ateliê, crochê, bolsas, cestas temáticas, presentes, acessórios" />
+          <meta name="description" content="Artesanato produzido por meio do afeto, com foco em peças autênticas, versáteis e encantadoras">
+     	<title>Fio do Afeto</title>
+     	<link rel="stylesheet" href="estilo.css">
+     </head>
+     <body>
+        <nav>
+            <p class="marca">Fio do Afeto<br>Artesanato</p>
+            <ul id="ul-nav">
+                <li><a class="a-nav" href="index.html">HOME</a></li>
+                <li><a class="a-nav" href="#presentes">PRESENTES ARTESANAIS</a></li>
+                <li><a class="a-nav" href="#sinta">SINTA E VEJA</a></li>
+                <li><a class="a-nav" href="#topo">AGENDAMENTOS</a></li>
+                <li><a class="a-nav" href="#localizacao">LOCALIZAÇÃO</a></li>
+            </ul>
+        </nav>
+
+        <div class = "card-agendamentos">
+            <div class="card-agendamentos-conteudo">
+
+            <section id="pag-agendamentos">
+                <h1>Agendamentos</h1>
+
+
+                    <p>Agende uma visita online ou presencial para garantir a melhor personalização do seu presente.</p>
+
+                    <form name="" method="" action="">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" type="text" name="nome_completo"  placeholder="Digite seu nome completo" required autofocus/>
+
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="email"  placeholder="usuario@gmail.com"/>
+
+                        <label for="senha">Senha:</label>
+                        <input id="senha" type="password" name="senha"  placeholder="somente números"/>
+
+                        <label for="celular">Celular:</label>
+                        <input id="celular" type="tel" name="celular"  placeholder="(99)99999-9999"
+                        pattern=“^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$” />
+
+                    <div id="data-hora-num">
+                        <div>
+                            <label for="data">Data:</label>
+                            <input id="data" type="date" name="data" />
+                        </div>
+                        <div>
+                            <label for="hora">Hora:</label>
+                            <input id="hora" type="time" name="hora" />
+                        </div>
+                        <div>
+                            <label for="aulas">Encontros:</label>
+                            <input id="aulas" type="number" name="aulas" min="1" max="10" step="1" />
+                        </div>
+                    </div>
+
+                    <label for="duraçao">Duração:</label>
+                    <select id="duraçao" name="duraçao">
+                        <option value="">Selecione</option>
+                        <option value="iniciante">15 minutos</option>
+                        <option value="basico">30 minutos</option>
+                        <option value="intermediario">1 hora</option>
+                        <option value="avancado">A definir</option>
+                    </select><br/>
+
+                    <fieldset>
+                        <legend>Peças:</legend>
+                        <input id="bol" type="radio" name="bolsa" value="bol" /> <label for="bol">Bolsas</label><br/>
+                        <input id="ces" type="radio" name="cesta" value="ces" /> <label for="ces">Cestas</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Processos:</legend>
+                        <input id="tema" type="checkbox" name="processo" value="definicao_tema" /> <label for="tema">Definição do tema</label><br/>
+                        <input id="esc-mat" type="checkbox" name="processo" value="escolha_materias" /> <label for="esc-mat">Escolha de materiais</label><br/>
+                        <input id="acomp" type="checkbox" name="processo" value="acompanhamento" /> <label for="acomp">Acompanhamento</label><br/>
+                        <input id="atend" type="checkbox" name="processo" value="atendimento_video" /> <label for="atend">Atendimento por vídeo</label><br/>
+                    </fieldset>
+
+                    <label for="msg">Mensagem:</label><br/>
+                    <textarea id="msg" cols="52" rows="4">
+                    </textarea>
+
+
+                    <div id="botoes-form">
+                            <input type="submit" name="btn-agendar" value="Agendar"/>
+                        <input type="reset" name="btn-cancelar" value="Cancelar"/>
+                    </div>	
+                    </form>
+            </section>            
+        </div>
+        </div>
+
+        <footer>
+            <p>Desenvolvido por <a href="https://instagram.com/ttha.ahtt" target="_blank">Thallyta Sanches</a> e <a href="https://www.instagram.com/pamela.gommes/" target="_blank">Pâmela Gomes</a> - 2026</p>
+        </footer>
